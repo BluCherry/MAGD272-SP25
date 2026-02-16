@@ -62,9 +62,11 @@ public class JumpMotor : MonoBehaviour, IJump
     }
 
     public bool Jump(){
-        if (CheckGround()){
+        if (CheckGround())
+        {
             jumpCount = numberOfJumps - 1;
-        }else if (jumpCount > 0) {
+        }
+        else if (jumpCount > 0) {
             jumpCount--;
         }
         else{
@@ -76,14 +78,16 @@ public class JumpMotor : MonoBehaviour, IJump
         {
             h = jumpHeight;
         }
-        else {
+        else 
+        {
             h = jumpHeight * secondaryJumpHeightMultiplier;
         }
 
         float jumpVel = Mathf.Sqrt(2 * upGravityScale * Mathf.Abs(Physics.gravity.y) * h);
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpVel);
 
-        if (jumpSound != null && AudioManager.audioManager != null) {
+        if (jumpSound != null && AudioManager.audioManager != null) 
+        {
             //play sound
             AudioManager.audioManager.playAudio(jumpSound, soundVolume);
         }
