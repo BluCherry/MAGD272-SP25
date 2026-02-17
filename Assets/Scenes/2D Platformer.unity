@@ -1227,9 +1227,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 415305025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2572ef49e382c84a996908070eb7b52, type: 3}
+  m_Script: {fileID: 11500000, guid: 707620c97087e423384809e329abf930, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlatformChaser
+  m_EditorClassIdentifier: Assembly-CSharp::TargetChaser_deAgro
   target: {fileID: 42877494}
   agroDistance: 10
   stoppingDistance: 0.1
