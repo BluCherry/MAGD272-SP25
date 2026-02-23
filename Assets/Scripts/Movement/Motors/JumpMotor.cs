@@ -6,6 +6,7 @@ using UnityEngine;
 public class JumpMotor : MonoBehaviour, IJump
 {
     Rigidbody2D rb;
+    bool isJumping;
 
     [Tooltip("How high can I jump")]
     public float jumpHeight = 4f;

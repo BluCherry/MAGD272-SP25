@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 42877501}
   - component: {fileID: 42877502}
   - component: {fileID: 42877503}
-  - component: {fileID: 42877504}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -153,7 +152,7 @@ Animator:
   m_GameObject: {fileID: 42877494}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: faefb5e369b581d45aa6679db7b46d1a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 312496b25d842af4a938e96c7d5aaee0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -357,29 +356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b74d330f9c122a4087776aab9384789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputController
---- !u!114 &42877504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42877494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f2357ed6497b48c0aa9b546f6f03b19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimationManagerPlatformer
-  doIFlip: 1
-  facingRight: 1
-  idle: {fileID: 7400000, guid: 8b4bca35bb3e78b43ad321336761a756, type: 2}
-  moveSide: {fileID: 7400000, guid: aa852921ab2da0f4aaee7788209e4ca4, type: 2}
-  moveUp: {fileID: 7400000, guid: 86b139d11aaba54458842c1e10da363f, type: 2}
-  moveDown: {fileID: 7400000, guid: cc1b4dcb9b708d14293484dec9d970a5, type: 2}
-  attack: {fileID: 7400000, guid: d580f1d1a428cb040b4d98afe8ba4e60, type: 2}
-  death: {fileID: 7400000, guid: 36684c15dec018a4ca8dcf9c646e3c15, type: 2}
-  action1: {fileID: 0}
-  action2: {fileID: 0}
-  action3: {fileID: 0}
 --- !u!1 &53752768
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +698,7 @@ GameObject:
   - component: {fileID: 284987310}
   - component: {fileID: 284987309}
   - component: {fileID: 284987311}
+  - component: {fileID: 284987312}
   m_Layer: 0
   m_Name: floatingDemon
   m_TagString: Untagged
@@ -904,6 +881,20 @@ MonoBehaviour:
   agroDistance: 10
   stoppingDistance: 0.1
   minimumDistance: 0.05
+--- !u!114 &284987312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284987305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea4926172f1cd8499cff2d67d60a18e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlatformerMovement
+  animators: []
+  <speed>k__BackingField: 10
 --- !u!1001 &307636248
 PrefabInstance:
   m_ObjectHideFlags: 0

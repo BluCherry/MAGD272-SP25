@@ -153,7 +153,7 @@ Animator:
   m_GameObject: {fileID: 42877494}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: faefb5e369b581d45aa6679db7b46d1a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 312496b25d842af4a938e96c7d5aaee0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -366,15 +366,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 42877494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f2357ed6497b48c0aa9b546f6f03b19, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7e8611f2e1024b9ec9c4004497e29, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimationManagerPlatformer
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationManager
   doIFlip: 1
   facingRight: 1
   idle: {fileID: 7400000, guid: 8b4bca35bb3e78b43ad321336761a756, type: 2}
   moveSide: {fileID: 7400000, guid: aa852921ab2da0f4aaee7788209e4ca4, type: 2}
-  moveUp: {fileID: 7400000, guid: 86b139d11aaba54458842c1e10da363f, type: 2}
-  moveDown: {fileID: 7400000, guid: cc1b4dcb9b708d14293484dec9d970a5, type: 2}
+  moveUp: {fileID: 7400000, guid: a6fdf3b62c5b8de418436d0859a8b671, type: 2}
+  moveDown: {fileID: 7400000, guid: 9587ae898133e8144b76c4532c6796af, type: 2}
   attack: {fileID: 7400000, guid: d580f1d1a428cb040b4d98afe8ba4e60, type: 2}
   death: {fileID: 7400000, guid: 36684c15dec018a4ca8dcf9c646e3c15, type: 2}
   action1: {fileID: 0}
