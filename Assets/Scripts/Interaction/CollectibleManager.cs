@@ -26,6 +26,7 @@ public class CollectibleManager : MonoBehaviour, ICollectible, ICompletible
     [Header("Drag in the ui text you want to display.")]
     public Text coinCount;
     public Text ammoCount;
+    public Text keyCount;
 
     public bool keyCollected;
     public GameObject keyImage;
@@ -214,18 +215,25 @@ public class CollectibleManager : MonoBehaviour, ICollectible, ICompletible
         {
             coinCount.text = coinsCollected.ToString();
         }
-        else if(showCoins && coinCount == null)
+        else if (showCoins && coinCount == null)
         {
             Debug.LogError("Missing the 'Coin Count' UI text");
         }
-
-        if(showAmmo && ammoCount != null)
+        if (showAmmo && ammoCount != null)
         {
             ammoCount.text = ammoCollected.ToString();
         }
         else if(showAmmo && ammoCount == null)
         {
             Debug.LogError("Missing the 'Ammo Count' UI text");
+        }
+        if (showKey && keyCount != null)
+        {
+            keyCount.text = keyCollected.ToString();
+        }
+        else if (showKey && keyCount == null)
+        {
+            Debug.LogError("Missing the 'Key Count' UI text");
         }
     }
 
@@ -242,9 +250,9 @@ public class CollectibleManager : MonoBehaviour, ICollectible, ICompletible
         if (showKey)
         {
             if (keyCollected)
-                keyImage.SetActive(true);
-            else
                 keyImage.SetActive(false);
+            else
+                keyImage.SetActive(true);
         }
     }
 
