@@ -6,12 +6,16 @@ using UnityEngine;
 
 public class Follow_player : MonoBehaviour
 {
-
     public Transform player;
+    private Vector3 pos;
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position + new Vector3(0, 1, -5);
+        pos = transform.position;
+
+        pos = player.transform.position + new Vector3(0, 1, -5);
+
+        transform.position = pos;
     }
 }
