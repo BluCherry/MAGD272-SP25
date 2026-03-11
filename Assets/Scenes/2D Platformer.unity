@@ -233,7 +233,7 @@ Transform:
   m_GameObject: {fileID: 42877494}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.01, y: 6.73, z: 0}
+  m_LocalPosition: {x: -11.42, y: -4.94, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -872,7 +872,7 @@ GameObject:
   - component: {fileID: 284987313}
   m_Layer: 0
   m_Name: floatingDemon
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1612,8 +1612,8 @@ GameObject:
   - component: {fileID: 415305035}
   - component: {fileID: 415305036}
   m_Layer: 0
-  m_Name: hellBeast
-  m_TagString: Untagged
+  m_Name: hellHound
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1628,7 +1628,7 @@ Animator:
   m_GameObject: {fileID: 415305025}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e30d0a55999a5be4995b4adba2da525c, type: 2}
+  m_Controller: {fileID: 9100000, guid: faefb5e369b581d45aa6679db7b46d1a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1687,7 +1687,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -446198063759132195, guid: 97f01aba31984f94eafa59036b5d0a37, type: 3}
+  m_Sprite: {fileID: -1313831829906175934, guid: c8eca992c1fc21048b117fac8255cbff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1749,8 +1749,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.018424988, y: 0.84375}
-  m_Size: {x: 1.0914001, y: 1.6875}
+  m_Offset: {x: 0, y: 0.375}
+  m_Size: {x: 1.1875, y: 0.75}
   m_Direction: 0
 --- !u!50 &415305030
 Rigidbody2D:
@@ -1851,11 +1851,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimationManagerPlatformer
   doIFlip: 1
   facingRight: 0
-  idle: {fileID: 7400000, guid: 99c15e6cec3af4e4cba24920ad7ae19a, type: 2}
-  moveSide: {fileID: 0}
-  moveUp: {fileID: 0}
+  idle: {fileID: 7400000, guid: 288bda559145f194ea27179b20e11037, type: 2}
+  moveSide: {fileID: 7400000, guid: c91f2acfa38859b458b9b664e95e01b4, type: 2}
+  moveUp: {fileID: 7400000, guid: 3e557aeb55dfe454ea2afb5f3ee37734, type: 2}
   moveDown: {fileID: 0}
-  attack: {fileID: 7400000, guid: 8809f3360f344c14a81a51563f44ab22, type: 2}
+  attack: {fileID: 7400000, guid: 3e557aeb55dfe454ea2afb5f3ee37734, type: 2}
   death: {fileID: 0}
   action1: {fileID: 0}
   action2: {fileID: 0}
@@ -3947,7 +3947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -6626,7 +6626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -336.5, y: 178.7}
+  m_AnchoredPosition: {x: -367, y: 186}
   m_SizeDelta: {x: 47.8839, y: 43.7385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1585067239
@@ -7568,11 +7568,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  near clip plane: 0.1
+  far clip plane: 5000
+  field of view: 40
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7612,10 +7612,40 @@ MonoBehaviour:
   m_GameObject: {fileID: 1866420478}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c32e5ec4d15fa1145a83b63c12de8d8c, type: 3}
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Follow_player
-  player: {fileID: 42877497}
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
+  Priority:
+    Enabled: 0
+    m_Value: 0
+  OutputChannel: 1
+  StandbyUpdate: 2
+  m_StreamingVersion: 20241001
+  m_LegacyPriority: 0
+  Target:
+    TrackingTarget: {fileID: 42877497}
+    LookAtTarget: {fileID: 0}
+    CustomLookAtTarget: 0
+  Lens:
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    ModeOverride: 0
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 21.946, y: 16.002}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
 --- !u!1 &1885676626
 GameObject:
   m_ObjectHideFlags: 0
@@ -7650,7 +7680,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -344.9, y: 130.5}
+  m_AnchoredPosition: {x: -376.02994, y: 130.8}
   m_SizeDelta: {x: 29.8201, y: 43.7385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1885676628
@@ -8138,7 +8168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -314.1, y: 130.8}
+  m_AnchoredPosition: {x: -340.94, y: 130.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2103816011
@@ -8213,7 +8243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -313, y: 180}
+  m_AnchoredPosition: {x: -340.94, y: 186}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2113420982
