@@ -10,6 +10,10 @@ public class Interactable : MonoBehaviour, IInteractable
     [Header("Put the sprite for when the object is turned ON here")]
     public Sprite OnSprite;
 
+    [Header("Check if only activatable once")]
+    public bool oneTime;
+    private int count;
+
     [Header("Uncheck for same states.", order = 4)]
     [Space(10, order = 5)]
     public bool oppositeState;
@@ -49,6 +53,7 @@ public class Interactable : MonoBehaviour, IInteractable
     void Start()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        count = 0;
 
         foreach (var t in target)
         {
@@ -92,6 +97,7 @@ public class Interactable : MonoBehaviour, IInteractable
         
         foreach (var t in target)
         {
+            if (oneTime == true && count > 0) return;
             t.SetActive(oppositeState ? !active : active);
         }
         
@@ -199,7 +205,17 @@ public class Interactable : MonoBehaviour, IInteractable
     void ChangeSprite()
     {
         if (requiresKey && !hasKey) return;
+        if (oneTime == true && count > 0) return;
         
-        spriteRenderer.sprite = spriteRenderer.sprite == OnSprite ? OffSprite : OnSprite;
+        if (OffSprite == null)
+        {
+            spriteRenderer.enabled = false;
+            count++;
+        }
+        else
+        {
+            spriteRenderer.sprite = spriteRenderer.sprite == OnSprite ? OffSprite : OnSprite;
+            count++;
+        }
     }
 }

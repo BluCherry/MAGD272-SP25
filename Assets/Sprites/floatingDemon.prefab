@@ -17,8 +17,6 @@ GameObject:
   - component: {fileID: 3728464133739655683}
   - component: {fileID: 3145647672438924210}
   - component: {fileID: -3205239071816068020}
-  - component: {fileID: 5395779644808439611}
-  - component: {fileID: 2477093906821684144}
   m_Layer: 6
   m_Name: floatingDemon
   m_TagString: Enemy
@@ -254,40 +252,3 @@ MonoBehaviour:
   damage: 1
   onlyDamagePlayer: 1
   disable: 0
---- !u!114 &5395779644808439611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4460623136184976115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e37402b8a26ff634b952eca607f34fa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttackManager
-  attacksEnabled: 1
---- !u!114 &2477093906821684144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4460623136184976115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dfda27d7be5e734ba50aefe51a92d4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  maxHealth: 10
-  currentHealth: 10
-  immunityTime: 0.2
-  immunityVisible: 1
-  immortal: 0
-  sound: {fileID: 0}
-  soundVolume: 1
-  dropThings: 0
-  healthBar: 0
-  timeToDie: 0
-  deathCountsTowardGoal: 0
-  autosetLayerToEnemy: 1
