@@ -299,7 +299,7 @@ Transform:
   m_GameObject: {fileID: 42877494}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.87, y: 2.88, z: 0}
+  m_LocalPosition: {x: -13.1, y: 2.9, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -762,7 +762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &143972309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1623,7 +1623,7 @@ Transform:
   m_GameObject: {fileID: 373528505}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000004457861, y: 0.000000094377235, z: -0.00000000482288, w: 1}
-  m_LocalPosition: {x: -11.87, y: 2.88, z: -10}
+  m_LocalPosition: {x: -13.1, y: 2.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3807,6 +3807,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OutOfBounds
   player: {fileID: 42877494}
+  minX: -14
+  maxX: 62
+  minY: -40
 --- !u!1 &938261098 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8369383532742148377, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
@@ -7303,7 +7306,7 @@ Transform:
   m_GameObject: {fileID: 1866420478}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000004457861, y: 0.000000094377235, z: 4.207206e-15, w: 1}
-  m_LocalPosition: {x: -7.389576, y: 2.8799949, z: -10.000001}
+  m_LocalPosition: {x: -7.36866, y: 2.8999944, z: -10.000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

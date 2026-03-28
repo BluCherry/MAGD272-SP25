@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/PlatformerMenu.unity
     guid: 1fef795a35b4e9f48bd9c2543201d9d9
   - enabled: 1
-    path: Assets/Scenes/2D Platformer.unity
+    path: Assets/Scenes/2DPlatformer_tutorial.unity
     guid: a5f60af1bdf464845bb2ef5d5dd5f09b
   - enabled: 1
-    path: Assets/Scenes/SpaceMenu.unity
-    guid: 1044ff8c19b62334394cfac46e573a83
+    path: Assets/Scenes/2D Platformer 1.unity
+    guid: 36a56fa49b18d994a9d986f0a35ca9ee
   - enabled: 1
-    path: Assets/Scenes/top-down space.unity
-    guid: 0c43f4c817bba8640b732295658f640a
+    path: Assets/Scenes/PlatformerWin.unity
+    guid: c9bc172f2bea00b41b54cb8749dc3587
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
