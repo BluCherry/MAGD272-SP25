@@ -13,10 +13,15 @@ public class PauseMenu : MonoBehaviour
     [Header("GameObject that turns on when paused (UI)")]
     public GameObject pauseScreen;
 
+    [Header("GameObject that turns on when dead (UI)")]
+    public GameObject deathScreen;
+
     bool paused = false;
+    bool death = false;
 
     void Start()
     {
+        deathScreen.SetActive(false);
         pauseScreen.SetActive(false);
         Time.timeScale = 1;
     }

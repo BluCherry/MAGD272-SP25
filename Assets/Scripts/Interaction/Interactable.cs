@@ -54,11 +54,6 @@ public class Interactable : MonoBehaviour, IInteractable
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         count = 0;
-
-        foreach (var t in target)
-        {
-            t.SetActive(oppositeState ? !active : active);
-        }
     }
 
     // Update is called once per frame

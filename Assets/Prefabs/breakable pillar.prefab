@@ -107,14 +107,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Interactable
   OffSprite: {fileID: 0}
   OnSprite: {fileID: 4255777226033644358, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
+  oneTime: 1
   oppositeState: 0
   keycode: 323
-  active: 1
+  active: 0
   target: []
   sound: {fileID: 0}
   soundVolume: 1
   requiresKey: 0
-  myObject: {fileID: 8275180306772843632}
 --- !u!60 &3892098839815978989
 PolygonCollider2D:
   m_ObjectHideFlags: 0

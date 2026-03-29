@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 8245021626975697090}
   - component: {fileID: 9014617006549898320}
   - component: {fileID: 9150801298416206073}
-  - component: {fileID: 7407595150264938114}
   - component: {fileID: 8433620875529354115}
+  - component: {fileID: 1726698901698645800}
+  - component: {fileID: 3566972701771475238}
   m_Layer: 6
   m_Name: EnemyShipTriangle
   m_TagString: Enemy
@@ -136,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TopDownMotor
   animators: []
-  <speed>k__BackingField: 5
+  <speed>k__BackingField: 2
 --- !u!114 &9014617006549898320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +182,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -247,19 +248,6 @@ PolygonCollider2D:
       - {x: 0.17999999, y: -0.76}
       - {x: 0.45, y: -0.76}
   m_UseDelaunayMesh: 0
---- !u!114 &7407595150264938114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4075405558548484932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e37402b8a26ff634b952eca607f34fa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttackManager
-  attacksEnabled: 1
 --- !u!114 &8433620875529354115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,8 +267,41 @@ MonoBehaviour:
   immortal: 0
   sound: {fileID: 0}
   soundVolume: 1
-  dropThings: 0
-  healthBar: 1
+  dropThings: 1
+  healthBar: 0
   timeToDie: 0
   deathCountsTowardGoal: 0
   autosetLayerToEnemy: 1
+--- !u!114 &1726698901698645800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4075405558548484932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84527603343d6c84daf6aac194ea0f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PassDamage
+  player: {fileID: 3567076013934800077, guid: 7d7254d312a6b8d4aa3a29df5460198f, type: 3}
+  thisObject: {fileID: 4075405558548484932}
+  finalObject: 0
+--- !u!114 &3566972701771475238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4075405558548484932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fd4208a368c534b9e99d32157c31ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDrop
+  droppables:
+  - {fileID: 4927964387306219297, guid: df6d7608f01f16942aa2548fd7dcbc9d, type: 3}
+  guaranteed: 0
+  percentChanceForDrop: 20
+  sound: {fileID: 0}
+  soundVolume: 1
